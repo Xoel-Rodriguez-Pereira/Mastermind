@@ -7,10 +7,6 @@ def generation_generator(generation_size, code_lenght):
             Fore.YELLOW + '𒊹', Fore.MAGENTA + '𒊹', Fore.LIGHTBLUE_EX + '𒊹', 
             Fore.WHITE + '𒊹', Fore.BLACK + '𒊹')
 
-    generation = {}
-    for individual in range(generation_size):
-
-        individual_code = list(pins[random.randint(0,7)] for _ in range(code_lenght))
-        generation[individual] = individual_code
+    generation = {individual : list(pins[random.randint(0,7)] for _ in range(code_lenght)) for individual in range(generation_size)}
 
     return generation
