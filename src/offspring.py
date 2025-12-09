@@ -10,7 +10,7 @@ def offspring (values, fitness):
 
     parents = (random.choices(selected_individuals, weights, k=2))
 
-    return parents
+    return parents ##Aun sin terminar, el return está para que se pueda usar el debugger
 
 if __name__ == '__main__':
 
