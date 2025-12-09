@@ -1,6 +1,6 @@
 import random
 from colorama import Fore
-from src.fitness_function import fitness_function
+from fitness_function import fitness_function
 
 def generation_generator(generation_size, code_lenght, solution):
 
@@ -10,8 +10,9 @@ def generation_generator(generation_size, code_lenght, solution):
 
 
     individual_value = tuple(list(pins[random.randint(0,7)] for _ in range(code_lenght)) for _ in range(generation_size))
-    generation = {individual : (individual_value[individual], fitness_function(solution, individual_value[individual])) for individual in range(generation_size)}
+    values = {individual : individual_value[individual] for individual in range(generation_size)}
+    fitness = {individual : fitness_function(solution, individual_value[individual]) for individual in range(generation_size)}
 
-    return generation
+    return values, fitness
 
 
