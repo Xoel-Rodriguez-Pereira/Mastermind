@@ -1,14 +1,16 @@
 import random
 from colorama import Fore
-from src.generation_generator import generation_generator
+from generation_generator import generation_generator
 
 def offspring (values, fitness):
 
     SAMPLE_SIZE = 100
     selected_individuals = random.sample(list(values.keys()), SAMPLE_SIZE)
-    wheights = list(fitness[individual].values() for individual in selected_individuals) 
+    weights = list(fitness[individual].values() for individual in selected_individuals) 
 
-    return wheights
+    parents = (random.choices(selected_individuals, weights, k=2))
+
+    return parents
 
 if __name__ == '__main__':
 
