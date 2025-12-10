@@ -6,12 +6,10 @@ def offspring (values, fitness):
 
     SAMPLE_SIZE = 100
     selected_individuals = random.sample(list(values.keys()), SAMPLE_SIZE)
-    weights = list(fitness[individual].values() for individual in selected_individuals) 
+    weights = list(fitness[individual] for individual in selected_individuals) 
 
-    parents = (random.choices(selected_individuals, weights, k=2))
+    NUM_CHILDREN = 50
+    parents = [random.choices(selected_individuals, weights, k=2) for _ in range(NUM_CHILDREN)]
 
     return parents
 
-if __name__ == '__main__':
-
-    offspring(* generation_generator(200, 4, [Fore.RED + '𒊹', Fore.RED + '𒊹', Fore.RED + '𒊹', Fore.RED + '𒊹']))
