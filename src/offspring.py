@@ -2,6 +2,7 @@ import random
 from colorama import Fore
 from reproduction import reproduction
 from fitness_function import fitness_function
+from select_survivors import select_survivors
 
 def offspring (values, fitness, solution):
 
@@ -18,4 +19,4 @@ def offspring (values, fitness, solution):
     generation_values = values + chidren_values
     generation_weights = weights + children_weights
 
-    
+    return select_survivors (generation_values, generation_weights, NUM_CHILDREN)

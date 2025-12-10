@@ -6,8 +6,8 @@ def select_survivors (generation_values, generation_fitness, NUM_CHILDREN):
 
     survivors_fitness_list = [generation_fitness[individual] for individual in range(len(survivors_values_list)) if individual == generation_values[individual]]
 
-    survivors_values = {individual : value for individual, value in enumerate(survivors_values_list)}
+    values = {individual : value for individual, value in enumerate(survivors_values_list)}
 
-    survivors_fitness = {individual : fitness for individual, fitness in enumerate(survivors_fitness_list)}
+    fitness = {individual : fitness for individual, fitness in enumerate(survivors_fitness_list)}
 
-    return survivors_values, survivors_fitness
+    return values, fitness
