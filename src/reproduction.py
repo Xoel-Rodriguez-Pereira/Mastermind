@@ -1,4 +1,8 @@
 
 def reproduction (parents, values):
-    return [values[parents[couple][0]][:2] + values[parents[couple][1]][2:] for couple in parents]
+
+    DAD = 0
+    MUM = 1
+    return [values[couple[DAD]][:2] + values[couple[MUM]][2:] for couple in parents] + \
+           [values[couple[DAD]][2:] + values[couple[MUM]][:2] for couple in parents]
  
