@@ -19,4 +19,4 @@ def offspring (values, fitness, solution):
     generation_values = values + chidren_values
     generation_weights = weights + children_weights
 
-    return select_survivors (generation_values, generation_weights, NUM_CHILDREN)
+    return select_survivors (generation_values, generation_weights, NUM_CHILDREN)   
