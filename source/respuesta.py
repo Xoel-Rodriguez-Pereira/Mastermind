@@ -31,10 +31,7 @@ def correct_code(color1,color2,color3,color4):
      return user_pin_colors
 
 
-if __name__ == "__main__":
 
-    print(correct_code("rojo", "verde", "azul", "amarillo")[0])
-    print(correct_code("rojo", "verde", "rosa", "negro")[3])
 
 
 
