@@ -1,6 +1,6 @@
 def select_survivors (generation_values, generation_fitness, NUM_CHILDREN):
 
-    minimum_fitness = set(generation_fitness[:])[NUM_CHILDREN]
+    minimum_fitness = sorted(generation_fitness[:])[NUM_CHILDREN]
 
     survivors_values_list = [generation_values[individual] for individual in range(len(generation_values)) if generation_fitness[individual] >= minimum_fitness]
 
