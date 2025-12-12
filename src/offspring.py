@@ -5,7 +5,7 @@ from select_survivors import select_survivors
 
 def offspring (values, fitness, solution):
 
-    NUM_CHILDREN = 50
+    NUM_CHILDREN = GENERATION_SIZE // 4
     parents = [random.choices(list(fitness.keys()), list(fitness.values()), k=2) for _ in range(NUM_CHILDREN)]
 
     chidren_values = reproduction(parents, values)
