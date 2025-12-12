@@ -1,13 +1,11 @@
-from colorama import Fore
+from constants import PINS
 
 
 def correct_code():
 
     color_input= input("Introduce el código de 4 colores del mastermind: ")
     
-    starting_silables=("roj","ama","ver","azu","ros","neg","bla","cel")
-    PINS = (Fore.RED + '𒊹', Fore.YELLOW + '𒊹', Fore.GREEN + '𒊹', Fore.BLUE + '𒊹',
-            Fore.MAGENTA + '𒊹', Fore.BLACK + '𒊹', Fore.WHITE + '𒊹', Fore.LIGHTCYAN_EX + '𒊹')
+    starting_silables=("roj","v","az","am","ros","c","b","n",)
     associated_colours= dict(zip(starting_silables,PINS))
 
     user_input=color_input.split()

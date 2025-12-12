@@ -2,10 +2,10 @@ import random
 from reproduction import reproduction
 from fitness_function import fitness_function
 from select_survivors import select_survivors
+from constants import NUM_CHILDREN
 
 def offspring (values, fitness, solution):
 
-    NUM_CHILDREN = GENERATION_SIZE // 4
     parents = [random.choices(list(fitness.keys()), list(fitness.values()), k=2) for _ in range(NUM_CHILDREN)]
 
     chidren_values = reproduction(parents, values)

@@ -1,4 +1,3 @@
-from colorama import Fore
 
 def print_solutions(solutions_history, iteration):
     
@@ -21,6 +20,8 @@ en {3} intentos.'''.format(selected_code_string, Fore.RESET + '|',solutions_hist
 
 
 if __name__ == '__main__':
+
+    from colorama import Fore
 
     print_solutions([([Fore.RED + '𒊹', Fore.RED + '𒊹', Fore.RED + '𒊹', Fore.RED + '𒊹'],8)], 4)
     print_solutions([([Fore.BLUE + '𒊹', Fore.RED + '𒊹', Fore.BLUE + '𒊹', Fore.RED + '𒊹'],4)], 7)
