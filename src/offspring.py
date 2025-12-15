@@ -14,5 +14,5 @@ def offspring (values, fitness, solution):
     generation_values = list(values.values()) + chidren_values
     generation_fitness = list(fitness.values()) + children_fitness
 
-    return select_survivors (generation_values, generation_fitness, NUM_CHILDREN)   
+    return select_survivors (generation_values, generation_fitness)   
 
