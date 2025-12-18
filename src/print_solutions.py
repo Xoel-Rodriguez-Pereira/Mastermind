@@ -1,5 +1,7 @@
+from src.constants import MAX_GENERATIONS
+from colorama import Fore
 
-def print_solutions(solutions_history, iteration):
+def print_solutions(solutions_history, generation):
     
     selected_code_string = ' '.join(item for item in solutions_history[-1][0])
 
@@ -7,14 +9,14 @@ def print_solutions(solutions_history, iteration):
 
         print ('''Se ha adivinado el código
 {0} {1} {2}          
-en {3} intentos.'''.format(selected_code_string, Fore.RESET + '|',solutions_history[-1][1], iteration))
+en {3} intentos.'''.format(selected_code_string, Fore.RESET + '|',solutions_history[-1][1], generation))
         
-    elif iteration < 12:
+    elif generation < MAX_GENERATIONS:
         
         print (''' Intento: {3}
-{0} {1} {2}'''.format(selected_code_string, Fore.RESET + '|',solutions_history[-1][1], iteration))
+{0} {1} {2}'''.format(selected_code_string, Fore.RESET + '|',solutions_history[-1][1], generation))
 
-    elif iteration >= 12:
+    elif generation >= MAX_GENERATIONS:
 
         print ('No se ha podido adivinar el código')
 

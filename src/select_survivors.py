@@ -10,8 +10,7 @@ def select_survivors (generation_values, generation_fitness):
 
         chosen_position = random.choices(positions, fitness_copy, k=1)
         individuals_list += chosen_position
-        positions[chosen_position[0]].pop()
-        fitness_copy[chosen_position[0]].pop()
+        fitness_copy[chosen_position[0]] = 0
 
 
     values = {individual : generation_values[individual] for individual in individuals_list}

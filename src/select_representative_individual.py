@@ -1,6 +1,5 @@
 import random
 
-solutions_history = []
 def select_representative_individual (values, fitness):
 
     max_generation_fitness = max(fitness.values())
@@ -9,6 +8,4 @@ def select_representative_individual (values, fitness):
 
     representative_individual_value = random.choice([individual_value for individual, individual_value in values.items() if individual == representative_individual])
 
-    solutions_history += [(representative_individual_value, max_generation_fitness)]
-
-    return solutions_history
+    return [(representative_individual_value, max_generation_fitness)]

@@ -7,3 +7,5 @@ CODE_LENGHT = 4
 PINS = (Fore.RED + '𒊹', Fore.GREEN + '𒊹', Fore.BLUE + '𒊹',
         Fore.YELLOW + '𒊹', Fore.MAGENTA + '𒊹', Fore.LIGHTBLUE_EX + '𒊹', 
         Fore.WHITE + '𒊹', Fore.BLACK + '𒊹')
+
+MAX_GENERATIONS = 14
