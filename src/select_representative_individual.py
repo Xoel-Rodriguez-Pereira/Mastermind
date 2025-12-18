@@ -12,6 +12,4 @@ def select_representative_individual (values, fitness, iteration):
 
     solutions_history += [(representative_individual_value, max_generation_fitness)]
 
-    print_solutions(solutions_history, iteration)
-
     return solutions_history
