@@ -17,15 +17,16 @@ def mainloop():
     solutions_history = select_representative_individual(values, fitness, generation)
     print_solutions(solutions_history, solution)
     
-    while generation <= 14:
+    if solutions_history[-1] != solution:
+        while generation <= 14:
 
-        values, fitness = offspring(values, fitness)
-        generation += 1
-        solutions_history = select_representative_individual(values, fitness, generation)
-        print_solutions(solutions_history, solution)
-        
-        if solutions_history[-1] == solution:
-            break
+            values, fitness = offspring(values, fitness)
+            generation += 1
+            solutions_history = select_representative_individual(values, fitness, generation)
+            print_solutions(solutions_history, solution)
+            
+            if solutions_history[-1] == solution:
+                break
 
 
     
