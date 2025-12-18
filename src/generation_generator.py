@@ -1,10 +1,10 @@
 import random
-from fitness_function import fitness_function
-from constants import GENERATION_SIZE, PINS
+from src.fitness_function import fitness_function
+from src.constants import GENERATION_SIZE, PINS, CODE_LENGHT
 
-def generation_generator(code_lenght, solution):
+def generation_generator(solution):
     
-    individual_value = tuple(list(PINS[random.randint(0,7)] for _ in range(code_lenght)) for _ in range(GENERATION_SIZE))
+    individual_value = tuple(list(PINS[random.randint(0,7)] for _ in range(CODE_LENGHT)) for _ in range(GENERATION_SIZE))
     values = {individual : individual_value[individual] for individual in range(GENERATION_SIZE)}
     fitness = {individual : fitness_function(solution, individual_value[individual]) for individual in range(GENERATION_SIZE)}
 

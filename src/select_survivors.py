@@ -1,5 +1,5 @@
 import random
-from constants import GENERATION_SIZE
+from src.constants import GENERATION_SIZE
 
 def select_survivors (generation_values, generation_fitness):
 

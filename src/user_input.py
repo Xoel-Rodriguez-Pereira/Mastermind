@@ -1,4 +1,4 @@
-from constants import PINS
+from src.constants import PINS
 
 
 def correct_code():

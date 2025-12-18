@@ -1,8 +1,7 @@
 import random
-from print_solutions import print_solutions
 
 solutions_history = []
-def select_representative_individual (values, fitness, iteration):
+def select_representative_individual (values, fitness):
 
     max_generation_fitness = max(fitness.values())
 

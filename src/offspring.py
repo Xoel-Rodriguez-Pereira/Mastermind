@@ -1,8 +1,8 @@
 import random
-from reproduction import reproduction
-from fitness_function import fitness_function
-from select_survivors import select_survivors
-from constants import NUM_CHILDREN
+from src.reproduction import reproduction
+from src.fitness_function import fitness_function
+from src.select_survivors import select_survivors
+from src.constants import NUM_CHILDREN
 
 def offspring (values, fitness, solution):
 
