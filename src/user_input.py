@@ -3,7 +3,10 @@ from src.constants import PINS
 
 def correct_code():
 
-    color_input= input("Introduce el código de 4 colores del mastermind: ")
+    color_input= input("Introduce el código de 4 colores del mastermind.\n" \
+     "--------------------------------------------------------------------\n" \
+    "COLORES DISPONIBLES: Rojo, verde, azul, amarillo, rosa, celeste, blanco, negro\n" \
+     "Escribe los colores separados por espacios: ")
     
     starting_silables=("roj","v","az","am","ros","c","b","n",)
     associated_colours= dict(zip(starting_silables,PINS))
