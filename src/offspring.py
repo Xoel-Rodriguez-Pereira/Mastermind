@@ -3,12 +3,14 @@ from src.reproduction import reproduction
 from src.fitness_function import fitness_function
 from src.select_survivors import select_survivors
 from src.constants import NUM_CHILDREN
+from src.mutation import mutation
 
 def offspring (values, fitness, solution):
 
     parents = [random.choices(list(fitness.keys()), list(fitness.values()), k=2) for _ in range(NUM_CHILDREN)]
 
     chidren_values = reproduction(parents, values)
+    mutation(chidren_values)
     children_fitness = [fitness_function(solution, chidren_values[child]) for child in range(NUM_CHILDREN)]
     
     generation_values = list(values.values()) + chidren_values
