@@ -1,8 +1,10 @@
+from src.constants import CODE_LENGHT
 
 def reproduction (parents, values):
 
     DAD = 0
     MUM = 1
-    return [values[couple[DAD]][:2] + values[couple[MUM]][2:] for couple in parents] + \
-           [values[couple[DAD]][2:] + values[couple[MUM]][:2] for couple in parents]
+    gene_midle = CODE_LENGHT // 2
+    return [values[couple[DAD]][:gene_midle] + values[couple[MUM]][gene_midle:] for couple in parents] + \
+           [values[couple[DAD]][gene_midle:] + values[couple[MUM]][:gene_midle] for couple in parents]
  
