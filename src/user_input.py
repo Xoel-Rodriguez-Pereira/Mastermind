@@ -5,7 +5,7 @@ def correct_code():
     
     starting_silables = ("roj", "v", "az", "am", "ros", "c", "b", "n")
     associated_colours = dict(zip(starting_silables, PINS))
-    user_pin_colors=[]
+    user_pin_colors = []
     
     is_code_valid = False
     while is_code_valid == False:
