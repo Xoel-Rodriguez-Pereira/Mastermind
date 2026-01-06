@@ -23,3 +23,4 @@ def fitness_grafic(generations_almanac, fitness_almanac):
     # Show grid and plot
     plt.grid(True)
     plt.show()
+    
