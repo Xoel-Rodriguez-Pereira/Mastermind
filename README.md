@@ -112,6 +112,7 @@ Ejemplo: `Rojo Amarillo Verde Blanco`
 ## Diseño:
 ### Diagrama de componentes:
 
+  ![Diagrama de componentes](assets/Diagrama%20de%20componentes.png)
 
 
 ## Uso de IA:
