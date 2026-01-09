@@ -122,11 +122,5 @@ Ninguna parte del código está directamente creada por IA, pero si hemos usado 
 
 También se ha utilizado ChatGPT para asistir con la redacción del README.
 
-## Conclusión:
-
-Durante el transcurso de este proyecto durante las clases de programación y entornos de desarrollo
-hemos llegado a entender el concepto del algoritmo genético y como funciona la inteligencia
-artificial a través del mastermind, los módulos que conllevan para hacerla funcionar junto con las ventajas como las dificultades que 
-lleva llegar a comprenderla.
 
 
