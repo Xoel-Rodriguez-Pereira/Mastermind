@@ -109,8 +109,11 @@ Ejemplo: `Rojo Amarillo Verde Blanco`
 
 *Puede escribirse en mayúscula o en minúscula.*
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 80a65dc5c7e5b59522284a2e22c36b8bed9b1ee7
 ## Diseño:
 ### Diagrama de componentes:
 
