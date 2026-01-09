@@ -109,6 +109,8 @@ Ejemplo: `Rojo Amarillo Verde Blanco`
 
 *Puede escribirse en mayúscula o en minúscula.*
 
+
+
 ## Diseño:
 ### Diagrama de componentes:
 
@@ -119,3 +121,12 @@ Ejemplo: `Rojo Amarillo Verde Blanco`
 Ninguna parte del código está directamente creada por IA, pero si hemos usado ChatGPT y Copilot como apoyos para aclarar dudas sobre el funcionamiento de funciones *Buit In* de python, funcionalidades de Vscode, etc.
 
 También se ha utilizado ChatGPT para asistir con la redacción del README.
+
+## Conclusión:
+
+Durante el transcurso de este proyecto durante las clases de programación y metodología
+hemos llegado a entender el concepto del algoritmo genético y como funciona la inteligencia
+artificial a través del mastermind, los módulos que conllevan para hacerla funcionar junto con las ventajas como las dificultades que 
+lleva llegar a comprenderla.
+
+
