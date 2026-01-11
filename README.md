@@ -138,3 +138,7 @@ lleva llegar a comprenderla.
 - Los casos tests son muy favorables
 - Como se printea en pantalla
 - Evitar que se repita la misma selección
+
+## Dificultades encontradas:
+---
+-
