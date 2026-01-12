@@ -109,11 +109,8 @@ Ejemplo: `Rojo Amarillo Verde Blanco`
 
 *Puede escribirse en mayúscula o en minúscula.*
 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 80a65dc5c7e5b59522284a2e22c36b8bed9b1ee7
 ## Diseño:
 ### Diagrama de componentes:
 
@@ -138,3 +135,9 @@ lleva llegar a comprenderla.
 - Los casos tests son muy favorables
 - Como se printea en pantalla
 - Evitar que se repita la misma selección
+
+
+## Dificultades encontradas
+---
+
+-Al principio hubo complicaciones en ordenar las ramas de git
